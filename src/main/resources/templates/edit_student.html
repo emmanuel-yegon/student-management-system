@@ -27,9 +27,9 @@
         </nav>
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card mt-5">
-                <h1 class="text-center">Add New Student</h1>
+                <h1 class="text-center">Update Student</h1>
                 <div class="card-body">
-                    <form method="POST" th:action="@{/students}" th:object="${student}">
+                    <form method="POST" th:action="@{/students/{id} (id=${student.id})}" th:object="${student}">
                         <div class="form-group">
                             <label>First Name</label>
                             <input class="form-control" name="firstName" placeholder="Enter Student First Name"
